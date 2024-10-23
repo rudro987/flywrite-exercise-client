@@ -1,9 +1,19 @@
+import DashboardLayout from "./Layout/DashboardLayout";
+import DashboardSidebar from "./pages/Dashboard/DashboardSidebar";
+
 const App = () => {
   return (
     <>
-      <h1>Flywire Exercise</h1>
+      <div className="flex">
+        <div className="w-2/12">
+          <DashboardSidebar />
+        </div>
+        <div className="flex-grow">
+          <DashboardLayout />
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default App;
